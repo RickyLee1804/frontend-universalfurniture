@@ -1,13 +1,13 @@
-// src/App.js
-import React from 'react';
-import Login from './components/login'; // Memanggil komponen login.js
-import './styles/App.css'; // Memanggil styling global
+import { Routes, Route } from 'react-router-dom';
+import Login from './components/login';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <Login /> {/* Menampilkan halaman login */}
-    </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+    </Routes>
   );
 }
 
