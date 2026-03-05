@@ -1,0 +1,301 @@
+.pr-container{
+  padding:30px;
+  background:#f5f6f8;
+  min-height:100vh;
+  font-family:Segoe UI, sans-serif;
+}
+
+.pr-header h1{
+  font-size:28px;
+  font-weight:700;
+}
+
+.pr-header p{
+  color:#666;
+  margin-top:5px;
+}
+
+.pr-header span{
+  color:#d23a2e;
+  font-weight:600;
+}
+
+/* CARD */
+
+.pr-card{
+  margin-top:25px;
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* TOP */
+
+.pr-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.pr-top h2{
+  font-size:20px;
+  font-weight:600;
+}
+
+.pr-actions{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+/* SEARCH BOX - SESUAI FIGMA */
+
+.search-box{
+  position: relative;
+  display:flex;
+  align-items:center;
+  width: 220px;
+  min-width: 220px;
+  max-width: 220px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #fbbf24;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.search-input{
+  width: 100%;
+  padding: 12px 20px 12px 48px;
+  border: 2px solid #fbbf24;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-input::placeholder{
+  color: #fbbf24;
+  font-weight: 400;
+}
+
+.search-input:focus{
+  border-color: #f59e0b;
+}
+
+/* FILTER BUTTON - SESUAI FIGMA */
+
+.btn-filter{
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  background-color: #ffffff;
+  color: #fbbf24;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filter-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.btn-filter:hover{
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+}
+
+.btn-filter:active{
+  background-color: #fef3c7;
+}
+
+/* ADD BUTTON - SESUAI FIGMA */
+
+.btn-add{
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  background-color: #fbbf24;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 3px 10px rgba(251, 191, 36, 0.3);
+}
+
+.btn-add:hover{
+  background-color: #f59e0b;
+  box-shadow: 0 5px 14px rgba(251, 191, 36, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-add:active{
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+}
+
+/* TABLE */
+
+.pr-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.pr-table th{
+  text-align:left;
+  padding:14px;
+  color:#555;
+  font-weight:600;
+  border-bottom:1px solid #eee;
+}
+
+.pr-table td{
+  padding:14px;
+  border-bottom:1px solid #f1f1f1;
+}
+
+/* STATUS */
+
+.status{
+  padding:6px 14px;
+  border-radius:10px;
+  font-size:13px;
+  font-weight:500;
+}
+
+.diajukan{
+  background:#f0f0f0;
+  color:#666;
+}
+
+.disetujui{
+  background:#dff3df;
+  color:#2e7d32;
+}
+
+.ditolak{
+  background:#f9d6cf;
+  color:#d84315;
+}
+
+.selesai{
+  background:#d9e9f7;
+  color:#1565c0;
+}
+
+/* ACTION */
+
+.aksi button{
+  border:none;
+  padding:6px 8px;
+  margin-right:5px;
+  border-radius:6px;
+  cursor:pointer;
+  color:white;
+}
+
+.btn-edit{
+  background:#f2c94c;
+}
+
+.btn-view{
+  background:#9e9e9e;
+}
+
+.btn-delete{
+  background:#e74c3c;
+}
+
+/* PAGINATION */
+
+.pr-pagination{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:20px;
+  font-size:14px;
+  color:#666;
+}
+
+.pages{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.pages button{
+  border:none;
+  background:#eee;
+  padding:5px 10px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.active{
+  background:#ddd;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .pr-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .pr-top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .pr-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn-filter,
+  .btn-add {
+    width: 100%;
+  }
+}
